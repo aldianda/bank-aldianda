@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Bank_Aldi</RootNamespace>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>6987fae1-8922-41ec-ad1e-2232f0051365</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,6 +27,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.4" />
+    <PackageReference Include="Ocelot" Version="18.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +44,7 @@
     <None Remove="EntityFramework" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Repositories\" />
+    <None Remove="Ocelot" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

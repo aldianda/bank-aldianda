@@ -59,6 +59,12 @@ namespace Bank_Aldi.Controllers
         {
             _repository.Delete(id);
         }
+
+        [HttpGet]
+        public ActionResult History()
+        {
+           return Ok(_repository.History());
+        }
     }
 }
 
